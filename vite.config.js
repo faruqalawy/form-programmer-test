@@ -6,6 +6,7 @@ export default defineConfig({
   // base: "/form-programmer-test.vercel.app/",
   plugins: [vue()],
   server: {
+    cors: false,
     proxy: {
       '/api': {
         target: 'https://emsifa.github.io',
